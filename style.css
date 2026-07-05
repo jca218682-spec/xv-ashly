@@ -1,1 +1,290 @@
+/* ===========================
+   XV Años Ashly
+=========================== */
 
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    background:linear-gradient(180deg,#dff4ff,#bfe8ff,#f7fbff);
+
+    color:#333;
+
+    overflow-x:hidden;
+
+}
+
+/* Pantalla inicial */
+
+#welcome{
+
+    height:100vh;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+/* Foto */
+
+.hero{
+
+    width:300px;
+
+    border-radius:25px;
+
+    border:8px solid white;
+
+    box-shadow:0 20px 50px rgba(0,0,0,.25);
+
+    margin-bottom:25px;
+
+}
+
+/* Titulos */
+
+h1{
+
+    font-family:'Great Vibes',cursive;
+
+    font-size:75px;
+
+    color:#4d7cff;
+
+}
+
+h2{
+
+    font-family:'Great Vibes',cursive;
+
+    font-size:42px;
+
+    color:#6aa8ff;
+
+}
+
+.fecha{
+
+    margin-top:15px;
+
+    font-size:20px;
+
+    color:#666;
+
+    line-height:1.8;
+
+}
+
+/* Botón */
+
+#enter{
+
+    margin-top:35px;
+
+    padding:18px 45px;
+
+    border:none;
+
+    border-radius:50px;
+
+    background:#6bb8ff;
+
+    color:white;
+
+    font-size:20px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.2);
+
+}
+
+#enter:hover{
+
+    transform:scale(1.05);
+
+    background:#4b9dff;
+
+}
+
+/* Contenido */
+
+#contenido{
+
+    display:none;
+
+    padding:60px 25px;
+
+    max-width:1100px;
+
+    margin:auto;
+
+}
+
+/* Contador */
+
+.contador{
+
+    text-align:center;
+
+    margin-bottom:70px;
+
+}
+
+#countdown{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:25px;
+
+    flex-wrap:wrap;
+
+    margin-top:30px;
+
+}
+
+#countdown div{
+
+    background:white;
+
+    padding:25px;
+
+    border-radius:20px;
+
+    width:120px;
+
+    box-shadow:0 8px 25px rgba(0,0,0,.12);
+
+}
+
+#countdown span{
+
+    font-size:45px;
+
+    font-weight:bold;
+
+    color:#4a8dff;
+
+}
+
+#countdown p{
+
+    margin-top:10px;
+
+}
+
+/* Secciones */
+
+section{
+
+    margin-bottom:80px;
+
+    text-align:center;
+
+}
+
+.info p,
+.evento p{
+
+    margin:18px 0;
+
+    font-size:19px;
+
+}
+
+/* Botones */
+
+.boton{
+
+    display:inline-block;
+
+    margin-top:20px;
+
+    padding:15px 35px;
+
+    background:#5aa8ff;
+
+    color:white;
+
+    border-radius:40px;
+
+    text-decoration:none;
+
+    transition:.3s;
+
+}
+
+.boton:hover{
+
+    transform:translateY(-4px);
+
+}
+
+.whatsapp{
+
+    background:#25D366;
+
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+.hero{
+
+width:85%;
+
+}
+
+h1{
+
+font-size:58px;
+
+}
+
+h2{
+
+font-size:34px;
+
+}
+
+#countdown div{
+
+width:90px;
+
+padding:20px;
+
+}
+
+#countdown span{
+
+font-size:35px;
+
+}
+
+}
