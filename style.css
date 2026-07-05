@@ -26,24 +26,38 @@ body{
 
 /* Pantalla inicial */
 
-#welcome{
+#welcome {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
 
-    height:100vh;
+    background-image: url('img/background.png'); /* tu foto */
+    background-size: cover;
+    background-position: center;
+}
 
-    display:flex;
+/* Filtro oscuro para que el texto se lea mejor */
+#welcome::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.4); /* oscurece un poco */
+    z-index: 1;
+}
 
-    flex-direction:column;
-
-    justify-content:center;
-
-    align-items:center;
-
-    text-align:center;
-
-    position:relative;
-
-    overflow:hidden;
-
+/* Asegura que el texto quede encima */
+#welcome h1,
+#welcome h2,
+#welcome p,
+#welcome button {
+    position: relative;
+    z-index: 2;
 }
 
 /* Foto */
