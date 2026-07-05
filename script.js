@@ -14,6 +14,15 @@ const fechaEvento = new Date("September 12, 2026 20:00:00").getTime();
 boton.addEventListener("click", () => {
 
     musica.play();
+    musica.volume = 0.7;   // volumen al 70%
+musica.muted = false;  // asegúrate que no esté silenciado
+
+musica.play().then(() => {
+    console.log("Música reproduciéndose...");
+}).catch(error => {
+    console.error("Error al reproducir música:", error);
+});
+
 
     bienvenida.style.display = "none";
 
