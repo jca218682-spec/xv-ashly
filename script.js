@@ -65,5 +65,11 @@ function actualizarContador(){
 }
 
 setInterval(actualizarContador,1000);
+document.getElementById("abrirInvitacion").addEventListener("click", function() {
+    document.getElementById("welcome").style.display = "none";
+    document.getElementById("contenido").style.display = "block";
+    document.getElementById("musica").play(); // inicia la música
+});
+
 
 actualizarContador();
