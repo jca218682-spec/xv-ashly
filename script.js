@@ -2,10 +2,25 @@
 // XV Años Ashly
 // =============================
 
-const boton = document.getElementById("enter");
 const bienvenida = document.getElementById("welcome");
 const contenido = document.getElementById("contenido");
 const musica = document.getElementById("musica");
+
+// Abrir invitación al hacer clic en el recuadro
+document.getElementById("abrirInvitacion").addEventListener("click", function() {
+    musica.volume = 0.7;   // volumen al 70%
+    musica.muted = false;  // asegúrate que no esté silenciado
+
+    musica.play().then(() => {
+        console.log("Música reproduciéndose...");
+    }).catch(error => {
+        console.error("Error al reproducir música:", error);
+    });
+
+    bienvenida.style.display = "none";
+    contenido.style.display = "block";
+});
+
 
 // Evento
 const fechaEvento = new Date("September 12, 2026 20:00:00").getTime();
