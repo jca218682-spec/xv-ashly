@@ -29,13 +29,14 @@ body{
 #welcome {
     height: 100vh;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: center;   /* Centrado horizontal */
+    align-items: flex-end;     /* Lo baja hasta abajo */
     text-align: center;
     position: relative;
-    background-image: url('img/background.png'); /* tu foto */
+    background-image: url('img/background.png');
     background-size: cover;
     background-position: center;
+    padding-bottom: 50px;      /* Separación del borde inferior */
 }
 
 /* Recuadro blanco semitransparente */
