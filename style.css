@@ -75,11 +75,12 @@ h1{
 }
 
 h2 {
-    font-family: 'Alex Brush', cursive;
-    font-size: 64px;
+    font-family: 'Dancing Script', cursive;
+    font-size: 58px;
+    font-weight: 700;      /* Bold */
     color: #6FA8FF;
-    font-weight: normal;
     line-height: 1.2;
+    text-align: center;
     text-shadow:
         0 0 6px rgba(255,255,255,.9),
         2px 2px 6px rgba(70,130,255,.25);
