@@ -79,10 +79,13 @@ h1{
 
 h2 {
     font-family: 'Great Vibes', cursive;
-    font-size: 58px;
-    color: #7CB8FF;
+    font-size: 64px;
+    color: #6FA8FF;
     font-weight: normal;
-    text-shadow: 1px 1px 5px rgba(255,255,255,0.9);
+    line-height: 1.2;
+    text-shadow:
+        0 0 6px rgba(255,255,255,.9),
+        2px 2px 6px rgba(70,130,255,.25);
 }
 
 /* Botón */
