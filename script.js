@@ -21,17 +21,9 @@ document.getElementById("abrirInvitacion").addEventListener("click", () => {
         console.error("Error al reproducir música:", error);
     });
 
-// Ocultar solamente el recuadro
-document.querySelector(".overlay-box").style.opacity = "0";
-
-setTimeout(() => {
-    document.querySelector(".overlay-box").style.display = "none";
-}, 500);
-
-// Bajar suavemente al contenido
-document.getElementById("contenido").scrollIntoView({
-    behavior: "smooth"
-});
+bienvenida.style.display = "none";
+contenido.style.display = "block";
+    
 });
     
 // =============================
