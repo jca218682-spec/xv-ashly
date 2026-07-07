@@ -84,7 +84,7 @@ h2 {
     font-family: 'Great Vibes', cursive;
     font-size: 42px;
     color: #6aa8ff;
-    text-transform: none; /* evita que se cambie a minúsculas */
+    text-transform: capitalize;
 }
 
 .fecha{
