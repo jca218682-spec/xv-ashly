@@ -32,6 +32,7 @@ setTimeout(() => {
 document.getElementById("contenido").scrollIntoView({
     behavior: "smooth"
 });
+});
     
 // =============================
 // Cuenta regresiva
