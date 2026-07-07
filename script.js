@@ -21,8 +21,8 @@ document.getElementById("abrirInvitacion").addEventListener("click", () => {
         console.error("Error al reproducir música:", error);
     });
 
-    bienvenida.style.display = "none";
-    contenido.style.display = "block";
+  document.getElementById("contenido").scrollIntoView({
+    behavior: "smooth"
 });
 
 // =============================
