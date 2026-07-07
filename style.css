@@ -85,16 +85,6 @@ h2 {
     text-shadow: 1px 1px 5px rgba(255,255,255,0.9);
 }
 
-.fecha{
-    margin-top:15px;
-    font-size:20px;
-    color:#000;   /* negro */
-    font-weight:bold; /* opcional: más fuerte */
-    text-shadow: 1px 1px 4px rgba(255,255,255,0.6); /* opcional: sombra clara para resaltar */
-    line-height:1.8;
-}
-
-
 /* Botón */
 
 #enter{
