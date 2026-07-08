@@ -26,7 +26,7 @@ body {
     align-items: flex-end;
     text-align: center;
     position: relative;
-    background-image: url('img/Background.png'); /* fondo solo aquí */
+    background-image: url('img/Background.png'); /* con B mayúscula */
     background-size: cover;
     background-position: center;
     padding-bottom: 50px;
