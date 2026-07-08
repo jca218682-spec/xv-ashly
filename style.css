@@ -127,6 +127,39 @@ body {
 }
 
 }
+.scroll-down{
+
+    position:absolute;
+
+    bottom:25px;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    color:white;
+
+    font-size:50px;
+
+    animation:subirBajar 1.5s infinite;
+
+}
+
+@keyframes subirBajar{
+
+    0%,100%{
+
+        transform:translate(-50%,0);
+
+    }
+
+    50%{
+
+        transform:translate(-50%,10px);
+
+    }
+
+}
 /* Bloque 2: Contador */
 .countdown h2 {
   font-family: 'Dancing Script', cursive;
