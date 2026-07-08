@@ -69,15 +69,28 @@ body {
 
 
 /* Bloque 1: Foto */
-.foto img {
-  width: 90%;
-  max-width: 400px;
-  height: auto;
-  border-radius: 25px;
-  border: 8px solid white;
-  box-shadow: 0 20px 50px rgba(0,0,0,.25);
-}
+@media (max-width:768px){
 
+  .foto{
+      padding:0;
+      margin:0;
+      min-height:100dvh;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+  }
+
+  .foto img{
+      width:100vw;
+      height:100dvh;
+      max-width:none;
+      object-fit:cover;
+      border:none;
+      border-radius:0;
+      box-shadow:none;
+  }
+
+}
 /* Bloque 2: Contador */
 .countdown h2 {
   font-family: 'Dancing Script', cursive;
