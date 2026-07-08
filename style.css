@@ -195,3 +195,13 @@ h2 {
     font-size: 35px;
   }
 }
+/* Estilo exclusivo para el título de la primera página */
+.titulo-bienvenida {
+    font-family: 'Dancing Script', cursive;
+    font-size: 75px;
+    color: #4d7cff;
+    text-shadow:
+        0 0 6px rgba(255,255,255,.9),
+        2px 2px 6px rgba(70,130,255,.25);
+}
+
