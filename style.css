@@ -95,5 +95,100 @@ body {
   padding: 25px;
   border-radius: 20px;
   width: 120px;
- 
+  box-shadow: 0 8px 25px rgba(0,0,0,.12);
+}
 
+#countdown span {
+  font-size: 45px;
+  font-weight: bold;
+  color: #4a8dff;
+}
+
+#countdown p {
+  margin-top: 10px;
+}
+
+/* Bloque 3: Texto */
+.texto {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  max-width: 800px;
+}
+
+/* Bloque 4: Detalles */
+.detalles {
+  background: rgba(173,216,230,0.3);
+  border-radius: 15px;
+  padding: 30px;
+  font-size: 1.2rem;
+  max-width: 800px;
+}
+
+.boton {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 15px 35px;
+  background: #5aa8ff;
+  color: white;
+  border-radius: 40px;
+  text-decoration: none;
+  transition: .3s;
+}
+
+.boton:hover {
+  transform: translateY(-4px);
+}
+
+.whatsapp {
+  background: #25D366;
+}
+
+/* Bloque 5: Papás */
+.padres {
+  font-style: italic;
+  font-size: 1.3rem;
+}
+
+/* Titulos */
+h1 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 75px;
+    color: #4d7cff;
+}
+
+h2 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 58px;
+    font-weight: 700;
+    color: #6FA8FF;
+    line-height: 1.2;
+    text-align: center;
+    text-shadow:
+        0 0 6px rgba(255,255,255,.9),
+        2px 2px 6px rgba(70,130,255,.25);
+}
+
+/* Responsive */
+@media(max-width:768px) {
+  .foto img {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  h1 {
+    font-size: 58px;
+  }
+
+  h2 {
+    font-size: 34px;
+  }
+
+  #countdown div {
+    width: 90px;
+    padding: 20px;
+  }
+
+  #countdown span {
+    font-size: 35px;
+  }
+}
