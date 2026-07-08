@@ -20,16 +20,14 @@ body {
 }
 
 #welcome {
-    height: 100vh;
+    min-height: 100dvh;
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    text-align: center;
     position: relative;
-    background-image: url('portada.jpg'); /* con B mayúscula */
-    background-size: cover;
-    background-position: center;
-    padding-bottom: 50px;
+
+    background: url("img/Background.png") center center / cover no-repeat;
+    background-color: #b9d7ff;
 }
 
 
