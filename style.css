@@ -2,41 +2,35 @@
    XV Años Ashly
 =========================== */
 
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-html{
-    scroll-behavior:smooth;
+html {
+    scroll-behavior: smooth;
 }
 
-body{
-
-    font-family:'Poppins',sans-serif;
-
-    background:linear-gradient(180deg,#dff4ff,#bfe8ff,#f7fbff);
-
-    color:#333;
-
-    overflow-x:hidden;
-
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(180deg, #dff4ff, #bfe8ff, #f7fbff);
+    color: #333;
+    overflow-x: hidden;
 }
 
 /* Pantalla inicial */
-
 #welcome {
     height: 100vh;
     display: flex;
-    justify-content: center;   /* Centrado horizontal */
-    align-items: flex-end;     /* Lo baja hasta abajo */
+    justify-content: center;
+    align-items: flex-end;
     text-align: center;
     position: relative;
     background-image: url('img/background.png');
     background-size: cover;
     background-position: center;
-    padding-bottom: 50px;      /* Separación del borde inferior */
+    padding-bottom: 50px;
 }
 
 /* Recuadro blanco semitransparente */
@@ -52,255 +46,54 @@ body{
     margin-bottom: 20px;
 }
 
-/* Foto */
+/* ===========================
+   BLOQUES DE CONTENIDO
+=========================== */
 
-.portada {
-  text-align: center;
-  margin-bottom: 40px;
+#contenido {
+  display: none;
 }
 
-.hero {
+.block {
+  width: 100%;
+  min-height: 100vh; /* cada bloque ocupa toda la pantalla */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+/* Bloque 1: Foto */
+.foto img {
   width: 90%;
   max-width: 400px;
   height: auto;
   border-radius: 25px;
   border: 8px solid white;
   box-shadow: 0 20px 50px rgba(0,0,0,.25);
-  margin: auto;
-  display: block;
 }
 
-@media(max-width:768px){
-  .hero {
-    width: 100%;
-    max-width: 320px;
-  }
+/* Bloque 2: Contador */
+.countdown h2 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 48px;
+  color: #6FA8FF;
+  margin-bottom: 20px;
 }
 
-
-/* Titulos */
-
-h1{
-
-    font-family:'Great Vibes',cursive;
-
-    font-size:75px;
-
-    color:#4d7cff;
+#countdown {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
 }
 
-h2 {
-    font-family: 'Dancing Script', cursive;
-    font-size: 58px;
-    font-weight: 700;      /* Bold */
-    color: #6FA8FF;
-    line-height: 1.2;
-    text-align: center;
-    text-shadow:
-        0 0 6px rgba(255,255,255,.9),
-        2px 2px 6px rgba(70,130,255,.25);
-}
+#countdown div {
+  background: white;
+  padding: 25px;
+  border-radius: 20px;
+  width: 120px;
+ 
 
-/* Botón */
-
-#enter{
-
-    margin-top:35px;
-
-    padding:18px 45px;
-
-    border:none;
-
-    border-radius:50px;
-
-    background:#6bb8ff;
-
-    color:white;
-
-    font-size:20px;
-
-    cursor:pointer;
-
-    transition:.3s;
-
-    box-shadow:0 10px 25px rgba(0,0,0,.2);
-
-}
-
-#enter:hover{
-
-    transform:scale(1.05);
-
-    background:#4b9dff;
-
-}
-
-/* Contenido */
-
-#contenido {
-  display: none;
-  padding: 40px 20px;
-  max-width: 1100px;
-  margin: auto;
-}
-
-
-/* Contador */
-
-.contador{
-
-    text-align:center;
-
-    margin-bottom:70px;
-
-}
-
-#countdown{
-
-    display:flex;
-
-    justify-content:center;
-
-    gap:25px;
-
-    flex-wrap:wrap;
-
-    margin-top:30px;
-
-}
-
-#countdown div{
-
-    background:white;
-
-    padding:25px;
-
-    border-radius:20px;
-
-    width:120px;
-
-    box-shadow:0 8px 25px rgba(0,0,0,.12);
-
-}
-
-#countdown span{
-
-    font-size:45px;
-
-    font-weight:bold;
-
-    color:#4a8dff;
-
-}
-
-#countdown p{
-
-    margin-top:10px;
-
-}
-
-/* Secciones */
-
-section {
-  margin-bottom: 80px;
-  text-align: center;
-}
-
-
-.info p,
-.evento p{
-
-    margin:18px 0;
-
-    font-size:19px;
-
-}
-
-/* Botones */
-
-.boton{
-
-    display:inline-block;
-
-    margin-top:20px;
-
-    padding:15px 35px;
-
-    background:#5aa8ff;
-
-    color:white;
-
-    border-radius:40px;
-
-    text-decoration:none;
-
-    transition:.3s;
-
-}
-
-.boton:hover{
-
-    transform:translateY(-4px);
-
-}
-
-.whatsapp{
-
-    background:#25D366;
-
-}
-
-/* Responsive */
-
-@media(max-width:768px){
-
-.hero{
-
-width:85%;
-
-}
-
-h1{
-
-font-size:58px;
-
-}
-
-h2{
-
-font-size:34px;
-
-}
-
-#countdown div{
-
-width:90px;
-
-padding:20px;
-
-}
-
-#countdown span{
-
-font-size:35px;
-
-}
-
-}
-@media (max-width: 768px) {
-
-    #welcome {
-        justify-content: center;
-        align-items: flex-end;
-        padding-bottom: 40px;
-    }
-
-    .overlay-box {
-        width: 92%;
-        margin-bottom: 10px;
-    }
-
-}
-#contenido{
-    padding-top:80px;
-}
