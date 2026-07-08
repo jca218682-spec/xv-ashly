@@ -14,7 +14,7 @@ html {
 
 body {
     font-family: 'Poppins', sans-serif;
-    background: linear-gradient(180deg, #dff4ff, #bfe8ff, #f7fbff);
+    background: linear-gradient(180deg, #dff4ff, #bfe8ff, #f7fbff); /* degradado general */
     color: #333;
     overflow-x: hidden;
 }
@@ -27,7 +27,7 @@ body {
     align-items: flex-end;
     text-align: center;
     position: relative;
-    background-image: url('img/background.png');
+    background-image: url('img/background.png'); /* fondo solo aquí */
     background-size: cover;
     background-position: center;
     padding-bottom: 50px;
