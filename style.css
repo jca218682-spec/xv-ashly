@@ -309,3 +309,32 @@ h2 {
   }
 
 }
+@media (max-width:768px){
+
+    .overlay-box{
+
+        width:82%;
+
+        max-width:290px;
+
+        padding:18px;
+
+        border-radius:22px;
+
+        background:rgba(255,255,255,.72);
+
+        backdrop-filter:blur(10px);
+
+        -webkit-backdrop-filter:blur(10px);
+
+    }
+
+    .titulo-bienvenida{
+
+        font-size:32px;
+
+        line-height:1.2;
+
+    }
+
+}
