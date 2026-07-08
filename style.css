@@ -207,4 +207,19 @@ h2 {
         0 0 6px rgba(255,255,255,.9),
         2px 2px 6px rgba(70,130,255,.25);
 }
+@media (max-width: 768px) {
 
+  .overlay-box {
+    width: 85%;
+    max-width: 320px;
+    padding: 20px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+  }
+
+  .titulo-bienvenida {
+    font-size: 42px;
+    line-height: 1.2;
+  }
+
+}
