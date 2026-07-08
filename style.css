@@ -51,7 +51,10 @@ body {
 =========================== */
 
 #contenido {
-  display: none;
+    display: none;
+    background: none;   /* sin fondo */
+    padding: 0;
+    margin: 0;
 }
 
 .block {
