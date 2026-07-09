@@ -135,7 +135,9 @@ body {
 }
 
 /* Bloque 3: Calendario + Contador */
+/* Bloque 3: Calendario + Contador */
 .block.countdown{
+
     width:100%;
     min-height:100vh;
 
@@ -143,22 +145,22 @@ body {
 
     display:flex;
     flex-direction:column;
-    justify-content:center;
+
+    justify-content:flex-end;   /* En lugar de center */
     align-items:center;
 
-    text-align:center;
-    padding:80px 30px 100px;
+    padding:80px 30px 40px;
 
-    font-family:'Dancing Script', cursive;
     color:#0b2a4a;
 }
 
 /* Título "Faltan" */
-.block.countdown h2 {
-  font-size: 2.5em;
-  color: #0b2a4a;
-  margin: 40px 0 20px;
-  text-shadow: 0 2px 6px rgba(255,255,255,0.6);
+.block.countdown h2{
+
+    margin-top:0;
+    margin-bottom:20px;
+
+    font-size:2.2rem;
 }
 
 /* Contenedor del contador */
@@ -169,30 +171,41 @@ body {
   flex-wrap: wrap;
 }
 
-/* Cada bloque de tiempo */
-#countdown div {
-  background: rgba(255, 255, 255, 0.35);
-  border-radius: 15px;
-  padding: 20px 25px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.15);
-  backdrop-filter: blur(6px);
-  min-width: 90px;
+#countdown{
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    flex-wrap:wrap;
+
+    margin-top:20px;
 }
 
-/* Números del contador */
-#countdown span {
-  display: block;
-  font-size: 2.2em;
-  font-weight: bold;
-  color: #0b2a4a;
+#countdown div{
+
+    width:75px;
+    min-width:75px;
+
+    padding:12px;
+
+    border-radius:14px;
+
+    background:rgba(255,255,255,.65);
+
+    backdrop-filter:blur(6px);
+
+    box-shadow:0 8px 18px rgba(0,0,0,.12);
 }
 
-/* Etiquetas (Días, Horas, etc.) */
-#countdown p {
-  margin: 5px 0 0;
-  font-size: 1em;
-  color: #0b2a4a;
-  font-weight: 500;
+#countdown span{
+
+    font-size:2rem;
+    line-height:1;
+}
+
+#countdown p{
+
+    font-size:.85rem;
+    margin-top:8px;
 }
 
 
