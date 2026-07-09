@@ -127,13 +127,66 @@ body {
     display:block;
 
 }
-/* Bloque 2: Contador */
-.countdown h2 {
-  font-family: 'Dancing Script', cursive;
-  font-size: 48px;
-  color: #6FA8FF;
-  margin-bottom: 20px;
+/* Bloque 2: Texto */
+.texto {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  max-width: 800px;
 }
+
+/* Bloque 3: Contador */
+.block.countdown {
+  background-image: url('img/Guarda la fecha.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  padding: 80px 30px 100px;
+  font-family: 'Dancing Script', cursive;
+  color: #0b2a4a;
+}
+
+/* Título "Faltan" */
+.block.countdown h2 {
+  font-size: 2.5em;
+  color: #0b2a4a;
+  margin-bottom: 20px;
+  text-shadow: 0 2px 6px rgba(255,255,255,0.6);
+}
+
+/* Contenedor del contador */
+#countdown {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+/* Cada bloque de tiempo */
+#countdown div {
+  background: rgba(255, 255, 255, 0.35);
+  border-radius: 15px;
+  padding: 20px 25px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+  backdrop-filter: blur(6px);
+}
+
+/* Números del contador */
+#countdown span {
+  display: block;
+  font-size: 2.2em;
+  font-weight: bold;
+  color: #0b2a4a;
+}
+
+/* Etiquetas (Días, Horas, etc.) */
+#countdown p {
+  margin: 5px 0 0;
+  font-size: 1em;
+  color: #0b2a4a;
+  font-weight: 500;
+}
+
 
 #countdown {
   display: flex;
@@ -158,13 +211,6 @@ body {
 
 #countdown p {
   margin-top: 10px;
-}
-
-/* Bloque 3: Texto */
-.texto {
-  font-size: 1.5rem;
-  line-height: 2rem;
-  max-width: 800px;
 }
 
 /* Bloque 4: Detalles */
