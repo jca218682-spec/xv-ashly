@@ -133,8 +133,6 @@ body {
   line-height: 2rem;
   max-width: 800px;
 }
-
-/* Bloque 3: Calendario + Contador */
 /* Bloque 3: Calendario + Contador */
 .block.countdown{
 
@@ -154,60 +152,97 @@ body {
     color:#0b2a4a;
 }
 
-/* Título "Faltan" */
+/* ===========================
+   Título "Faltan"
+=========================== */
+
 .block.countdown h2{
-
-    margin-top:0;
-    margin-bottom:20px;
-
-    font-size:2.2rem;
+    margin: 25px 0 18px;
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.6rem;
+    font-weight: 700;
+    color: #6FA8FF;
+    text-shadow: 0 2px 8px rgba(255,255,255,.9);
 }
 
-/* Contenedor del contador */
-#countdown {
-  display: flex;
-  justify-content: center;
-  gap: 25px;
-  flex-wrap: wrap;
-}
+
+/* ===========================
+   CONTADOR
+=========================== */
 
 #countdown{
     display:flex;
     justify-content:center;
-    gap:15px;
-    flex-wrap:wrap;
-
-    margin-top:20px;
+    align-items:flex-start;
+    gap:45px;
+    flex-wrap:nowrap;
+    margin-bottom:20px;
 }
 
+/* Cada unidad del contador */
 #countdown div{
+    background:none;
+    box-shadow:none;
+    backdrop-filter:none;
+    border-radius:0;
+    padding:0;
+    width:auto;
+    min-width:auto;
+}
+/* Separadores entre cada elemento */
 
-    width:75px;
-    min-width:75px;
+#countdown div:not(:last-child){
 
-    padding:12px;
+    border-right: 1px solid rgba(22,61,130,.25);
 
-    border-radius:14px;
+    padding-right: 22px;
 
-    background:rgba(255,255,255,.65);
+    margin-right: 22px;
 
-    backdrop-filter:blur(6px);
+}
+/* Números */
+#countdown span{
+    display:block;
+    font-family:'Poppins', sans-serif;
+    font-size:3rem;
+    font-weight:600;
+    color:#163D82;
+    line-height:1;
+}
 
-    box-shadow:0 8px 18px rgba(0,0,0,.12);
+/* Texto debajo */
+#countdown p{
+    margin-top:8px;
+    font-family:'Poppins', sans-serif;
+    font-size:1rem;
+    font-weight:400;
+    color:#163D82;
+}
+.block.countdown h2{
+
+    font-size:2rem;
+
+    margin:18px 0 15px;
+
+}
+
+#countdown{
+
+    gap:18px;
+
 }
 
 #countdown span{
 
     font-size:2rem;
-    line-height:1;
+
 }
 
 #countdown p{
 
     font-size:.85rem;
-    margin-top:8px;
-}
 
+}
 
 /* Bloque 4: Detalles */
 .detalles {
