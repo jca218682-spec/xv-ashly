@@ -136,15 +136,21 @@ body {
 
 /* Bloque 3: Calendario + Contador */
 .block.countdown{
-    background-image: url("img/Guarda la fecha.png");
-}
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  text-align: center;
-  padding: 80px 30px 100px;
-  font-family: 'Dancing Script', cursive;
-  color: #0b2a4a;
+    width:100%;
+    min-height:100vh;
+
+    background: url("img/Guarda la fecha.png") center center / cover no-repeat;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+    padding:80px 30px 100px;
+
+    font-family:'Dancing Script', cursive;
+    color:#0b2a4a;
 }
 
 /* Título "Faltan" */
