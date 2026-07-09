@@ -135,8 +135,9 @@ body {
 }
 
 /* Bloque 3: Calendario + Contador */
-.block.countdown {
-  background-image: url('img/Guarda la fecha.png'); /* tu PNG */
+.block.countdown{
+    background-image: url("img/Guarda la fecha.png");
+}
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
