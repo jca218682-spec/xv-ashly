@@ -152,96 +152,61 @@ body {
     color:#0b2a4a;
 }
 
-/* ===========================
-   Título "Faltan"
-=========================== */
-
+/* Título "Faltan" */
 .block.countdown h2{
-    margin: 25px 0 18px;
+    margin-top: 35px;
+    margin-bottom: 25px;
+
     font-family: 'Dancing Script', cursive;
-    font-size: 2.6rem;
-    font-weight: 700;
+    font-size: 2rem;
     color: #6FA8FF;
     text-shadow: 0 2px 8px rgba(255,255,255,.9);
 }
 
-
-/* ===========================
-   CONTADOR
-=========================== */
-
+/* Contenedor del contador */
 #countdown{
     display:flex;
     justify-content:center;
     align-items:flex-start;
-    gap:45px;
+    gap:0;
     flex-wrap:nowrap;
-    margin-bottom:20px;
+
+    width:100%;
+    max-width:340px;
+
+    margin:0 auto;
 }
 
-/* Cada unidad del contador */
+/* Cada elemento */
 #countdown div{
+    flex:1;
+    text-align:center;
     background:none;
     box-shadow:none;
     backdrop-filter:none;
-    border-radius:0;
     padding:0;
-    width:auto;
-    min-width:auto;
+    min-width:0;
 }
-/* Separadores entre cada elemento */
 
+/* Separadores */
 #countdown div:not(:last-child){
-
-    border-right: 1px solid rgba(22,61,130,.25);
-
-    padding-right: 22px;
-
-    margin-right: 22px;
-
+    border-right:1px solid rgba(22,61,130,.25);
 }
+
 /* Números */
 #countdown span{
     display:block;
-    font-family:'Poppins', sans-serif;
-    font-size:3rem;
-    font-weight:600;
-    color:#163D82;
+    font-size:2.2rem;
+    font-weight:700;
     line-height:1;
-}
-
-/* Texto debajo */
-#countdown p{
-    margin-top:8px;
-    font-family:'Poppins', sans-serif;
-    font-size:1rem;
-    font-weight:400;
     color:#163D82;
 }
-.block.countdown h2{
 
-    font-size:2rem;
-
-    margin:18px 0 15px;
-
-}
-
-#countdown{
-
-    gap:18px;
-
-}
-
-#countdown span{
-
-    font-size:2rem;
-
-}
-
+/* Texto */
 #countdown p{
-
-    font-size:.85rem;
-
+    margin-top:6px;
+    font-size:.82rem;
+    color:#163D82;
 }
 
 /* Bloque 4: Detalles */
@@ -411,6 +376,37 @@ h2 {
         font-size:32px;
 
         line-height:1.2;
+
+    }
+
+}
+@media (max-width:768px){
+
+    .block.countdown h2{
+
+        margin-top:45px;
+
+        margin-bottom:18px;
+
+        font-size:2rem;
+
+    }
+
+    #countdown{
+
+        max-width:300px;
+
+    }
+
+    #countdown span{
+
+        font-size:1.9rem;
+
+    }
+
+    #countdown p{
+
+        font-size:.72rem;
 
     }
 
