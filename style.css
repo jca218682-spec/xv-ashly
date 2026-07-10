@@ -210,35 +210,81 @@ body {
 }
 
 /* Bloque 4: Detalles */
-.portada-evento {
-  width: 100%;
-  max-width: 900px;
-  display: block;
-  margin: 0 auto 20px auto;
-  border-radius: 10px;
-  box-shadow: 0 0 20px rgba(0, 0, 50, 0.3);
+/* CONTENEDOR DE LA PORTADA */
+.portada-container{
+    position:relative;
+    width:100%;
+    max-width:900px;
+    margin:40px auto;
+    overflow:hidden;
+    border-radius:18px;
 }
 
-.boton {
-  display: inline-block;
-  margin-top: 20px;
-  padding: 15px 35px;
-  background: #5aa8ff;
-  color: white;
-  border-radius: 40px;
-  text-decoration: none;
-  transition: .3s;
+/* IMAGEN */
+.portada-evento{
+    width:100%;
+    display:block;
+    border-radius:18px;
 }
 
-.boton:hover {
-  transform: translateY(-4px);
+/* INFORMACIÓN SOBRE LA IMAGEN */
+.detalle-portada{
+    position:absolute;
+    left:0;
+    right:0;
+    bottom:0;
+
+    padding:35px 20px;
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+
+    background:linear-gradient(to top,
+        rgba(0,0,0,.75),
+        rgba(0,0,0,.35),
+        transparent);
+
+    color:white;
+    text-align:center;
 }
 
+/* TÍTULO */
+.detalle-portada h2{
+    font-family:'Dancing Script',cursive;
+    font-size:48px;
+    margin-bottom:15px;
+    color:white;
+}
+
+/* TEXTO */
+.detalle-portada p{
+    margin:5px 0;
+    font-size:24px;
+}
+
+/* BOTÓN */
+.detalle-portada .boton{
+    margin-top:20px;
+    padding:14px 45px;
+    background:#5aa8ff;
+    color:white;
+    border-radius:40px;
+    text-decoration:none;
+    font-size:22px;
+    transition:.3s;
+}
+
+.detalle-portada .boton:hover{
+    transform:scale(1.05);
+}
+
+/* Bloque 5: Confirmacion */
 .whatsapp {
   background: #25D366;
 }
 
-/* Bloque 5: Papás */
+/* Bloque 6: Papás */
 .padres {
   font-style: italic;
   font-size: 1.3rem;
