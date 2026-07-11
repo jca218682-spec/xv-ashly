@@ -213,19 +213,30 @@ body {
 .portada-container{
     position:relative;
     width:100%;
-    height:100vh;
+    height:100dvh;
+    min-height:100dvh;
+
+    padding:0 !important;
+    margin:0 !important;
+
+    display:block;
+
     overflow:hidden;
-    margin:0;
-    border-radius:0;
 }
 
 /* IMAGEN */
 .portada-evento{
+
     width:100%;
-    height:100vh;
-    object-fit:cover;
-    object-position:center;
+
+    height:100%;
+
     display:block;
+
+    object-fit:cover;
+
+    object-position:center;
+
 }
 /* INFORMACIÓN SOBRE LA IMAGEN */
 .detalle-portada{
@@ -455,13 +466,6 @@ h2 {
 
         font-size:.72rem;
 
-    }
-
-}
-@media (max-width:768px){
-
-    .portada-evento{
-        height:360px;
     }
 
 }
