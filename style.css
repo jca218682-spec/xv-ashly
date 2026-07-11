@@ -211,22 +211,22 @@ body {
 
 /* Bloque 4: Detalles */
 .portada-container{
-    position: relative;
-    width: 100%;
-    min-height: 100vh;      /* Ocupa toda la pantalla */
-    overflow: hidden;
-    margin: 0;
-    border-radius: 0;
+    position:relative;
+    width:100%;
+    height:100vh;
+    overflow:hidden;
+    margin:0;
+    border-radius:0;
 }
 
 /* IMAGEN */
 .portada-evento{
     width:100%;
-    height:520px;
+    height:100vh;
     object-fit:cover;
+    object-position:center;
     display:block;
 }
-
 /* INFORMACIÓN SOBRE LA IMAGEN */
 .detalle-portada{
     position:absolute;
