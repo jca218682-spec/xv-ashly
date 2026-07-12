@@ -272,44 +272,36 @@ body {
 
 /* BOTÓN */
 .detalle-portada .boton{
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 12px;
+    position: absolute;
 
-    margin-top: 25px;
+    /* Ajusta estos valores hasta alinearlo con la mini imagen */
+    bottom: 78px;
+    left: 53%;
 
-    padding: 14px 26px;
+    transform: translateX(-50%);
 
-    width: auto;
-    max-width: none;
+    margin: 0;
+    padding: 0;
 
     background: transparent;
     border: none;
-    border-radius: 0;
 
-    color: #0d47c7;
-    font-size: 26px;
+    color: #0A47C8;
+    font-size: 28px;
     font-weight: 700;
-    text-decoration: none;
-    cursor: pointer;
 
-    transition: .25s;
-}
+    text-decoration: underline;
+    text-shadow: 1px 1px 4px rgba(255,255,255,.8);
 
-/* Icono */
-.detalle-portada .boton img{
-    width: 34px;
-    height: 34px;
-    flex-shrink: 0;
+    white-space: nowrap;
 }
 
 /* Hover */
 .detalle-portada .boton:hover{
-    transform: scale(1.05);
-    color:#003da8;
-}
 
+    color:#003da8;
+
+}
 /* Bloque 5: Confirmacion */
 .whatsapp {
   background: #25D366;
