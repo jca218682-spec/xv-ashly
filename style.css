@@ -272,16 +272,42 @@ body {
 
 /* BOTÓN */
 .detalle-portada .boton{
-    margin-top:25px;
-    width:75%;
-    max-width:320px;
-    padding:18px 0;
-    border-radius:50px;
-    font-size:22px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+
+    margin-top: 25px;
+
+    padding: 14px 26px;
+
+    width: auto;
+    max-width: none;
+
+    background: transparent;
+    border: none;
+    border-radius: 0;
+
+    color: #0d47c7;
+    font-size: 26px;
+    font-weight: 700;
+    text-decoration: none;
+    cursor: pointer;
+
+    transition: .25s;
 }
 
+/* Icono */
+.detalle-portada .boton img{
+    width: 34px;
+    height: 34px;
+    flex-shrink: 0;
+}
+
+/* Hover */
 .detalle-portada .boton:hover{
-    transform:scale(1.05);
+    transform: scale(1.05);
+    color:#003da8;
 }
 
 /* Bloque 5: Confirmacion */
