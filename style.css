@@ -275,8 +275,8 @@ body {
     position: absolute;
 
     /* Ajusta estos valores hasta alinearlo con la mini imagen */
-    bottom: 92px;
-    left: 70%;
+    bottom: 102px;
+    left: 60%;
 
     transform: translateX(-50%);
 
