@@ -304,11 +304,17 @@ body {
 }
 /* Bloque 5: Confirmacion */
 
-.confirmacion{
+/*==============================
+   BLOQUE 5 - CONFIRMACIÓN
+==============================*/
+
+.block.confirmacion{
     position: relative;
+    display: block;
     width: 100%;
-    padding: 0;
-    margin: 0;
+    min-height: auto;
+    padding: 0 !important;
+    margin: 0 !important;
     overflow: hidden;
     line-height: 0;
 }
@@ -317,35 +323,49 @@ body {
     display: block;
     width: 100%;
     height: auto;
+    margin: 0;
 }
 
 .confirmacion-contenido{
     position: absolute;
     left: 50%;
-    bottom: 8%;
+    bottom: 4%;
     transform: translateX(-50%);
-    width: 100%;
-    display: flex;
-    justify-content: center;
+    width: auto;
     line-height: normal;
+    z-index: 10;
 }
 
 .boton-confirmacion{
-    display: inline-block;
-    background: linear-gradient(135deg,#2b74ff,#0b57d0);
-    color: #fff;
-    text-decoration: none;
-    padding: 14px 36px;
-    border-radius: 40px;
-    font-family: 'Poppins', sans-serif;
-    font-size: 18px;
-    font-weight: 600;
-    box-shadow: 0 8px 20px rgba(0,0,0,.25);
-    transition: .3s;
+
+    display:inline-block;
+
+    padding:14px 36px;
+
+    border-radius:40px;
+
+    background:#1d5fd0;
+
+    color:#fff;
+
+    font-family:'Poppins',sans-serif;
+
+    font-size:18px;
+
+    font-weight:600;
+
+    text-decoration:none;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.25);
+
+    transition:.25s;
+
 }
 
 .boton-confirmacion:hover{
-    transform: scale(1.05);
+
+    transform:scale(1.05);
+
 }
 /* Bloque 6: Papás */
 .padres {
