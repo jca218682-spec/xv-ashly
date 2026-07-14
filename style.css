@@ -303,8 +303,45 @@ body {
 
 }
 /* Bloque 5: Confirmacion */
-.whatsapp {
-  background: #25D366;
+.confirmacion{
+    position: relative;
+    width:100%;
+    overflow:hidden;
+    background:#fff;
+}
+
+.confirmacion-portada{
+    display:block;
+    width:100%;
+    height:auto;
+}
+
+.confirmacion-contenido{
+    position:absolute;
+    bottom:9%;
+    left:50%;
+    transform:translateX(-50%);
+    width:100%;
+    display:flex;
+    justify-content:center;
+}
+
+.boton-confirmacion{
+    text-decoration:none;
+    background:#1d5fd0;
+    color:#fff;
+    padding:16px 40px;
+    border-radius:50px;
+    font-family:'Poppins', sans-serif;
+    font-size:18px;
+    font-weight:600;
+    transition:.3s;
+    box-shadow:0 10px 25px rgba(0,0,0,.25);
+}
+
+.boton-confirmacion:hover{
+    background:#0d47a1;
+    transform:scale(1.05);
 }
 
 /* Bloque 6: Papás */
