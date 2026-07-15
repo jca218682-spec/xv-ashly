@@ -147,12 +147,12 @@ body {
 /* Bloque 3: Portada adaptada */
 .block.portada {
     width: 100%;
-    min-height: 100vh;
+    height: auto;
     background: url("img/Nota.png") center center / cover no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 60px 20px;
+    padding: 40px 20px;
 }
 /* Bloque 4: Detalles */
 .portada-container{
