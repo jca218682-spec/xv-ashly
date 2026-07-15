@@ -127,11 +127,22 @@ body {
     display:block;
 
 }
-/* Bloque 2: Texto */
-.texto {
-  font-size: 1.5rem;
-  line-height: 2rem;
-  max-width: 800px;
+/* Bloque 2 */
+.block.texto{
+    width:100%;
+    min-height:100dvh;
+
+    background-image:url("img/Background-letras.png");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
+    padding:0 !important;
+    margin:0 !important;
+
+    max-width:none;
+
+    display:block;
 }
 /* Bloque 3: Calendario + Contador */
 .block.countdown{
