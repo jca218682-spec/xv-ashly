@@ -148,12 +148,23 @@ body {
 .block.portada {
     width: 100%;
     height: auto;
-    background: url("img/Nota.png") center center / cover no-repeat;
+    background: url("img/Nota.png") center top / contain no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 40px 20px;
+    padding: 30px 15px;   /* menos espacio en móvil */
 }
+
+/* Responsive para móviles */
+@media (max-width: 768px) {
+  .block.portada {
+    min-height: auto;       /* deja que se adapte al contenido */
+    background-size: contain; /* muestra la imagen completa */
+    background-position: center top;
+    padding: 20px 10px;     /* reduce aún más el padding */
+  }
+}
+
 /* Bloque 4: Detalles */
 .portada-container{
     position:relative;
