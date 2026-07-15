@@ -144,7 +144,7 @@ body {
 
     display:block;
 }
-/* Bloque 2.5: Portada adaptada */
+/* Bloque 3: Portada adaptada */
 .block.portada {
     width: 100%;
     min-height: 100vh;
@@ -154,82 +154,6 @@ body {
     align-items: center;
     padding: 60px 20px;
 }
-/* Bloque 3: Calendario + Contador */
-.block.countdown{
-
-    width:100%;
-    min-height:100vh;
-
-    background: url("img/Guarda la fecha.png") center center / cover no-repeat;
-
-    display:flex;
-    flex-direction:column;
-
-    justify-content:flex-end;   /* En lugar de center */
-    align-items:center;
-
-    padding:80px 30px 40px;
-
-    color:#0b2a4a;
-}
-
-/* Título "Faltan" */
-.block.countdown h2{
-    margin-top: 35px;
-    margin-bottom: 25px;
-
-    font-family: 'Dancing Script', cursive;
-    font-size: 2rem;
-    color: #6FA8FF;
-    text-shadow: 0 2px 8px rgba(255,255,255,.9);
-}
-
-/* Contenedor del contador */
-#countdown{
-    display:flex;
-    justify-content:center;
-    align-items:flex-start;
-    gap:0;
-    flex-wrap:nowrap;
-
-    width:100%;
-    max-width:340px;
-
-    margin:0 auto;
-}
-
-/* Cada elemento */
-#countdown div{
-    flex:1;
-    text-align:center;
-    background:none;
-    box-shadow:none;
-    backdrop-filter:none;
-    padding:0;
-    min-width:0;
-}
-
-/* Separadores */
-#countdown div:not(:last-child){
-    border-right:1px solid rgba(22,61,130,.25);
-}
-
-/* Números */
-#countdown span{
-    display:block;
-    font-size:2.2rem;
-    font-weight:700;
-    line-height:1;
-    color:#163D82;
-}
-
-/* Texto */
-#countdown p{
-    margin-top:6px;
-    font-size:.82rem;
-    color:#163D82;
-}
-
 /* Bloque 4: Detalles */
 .portada-container{
     position:relative;
@@ -323,12 +247,82 @@ body {
     color:#003da8;
 
 }
-/* Bloque 5: Confirmacion */
+/* Bloque 5: Calendario + Contador */
+.block.countdown{
 
-/*==============================
-   BLOQUE 5 - CONFIRMACIÓN
-==============================*/
+    width:100%;
+    min-height:100vh;
 
+    background: url("img/Guarda la fecha.png") center center / cover no-repeat;
+
+    display:flex;
+    flex-direction:column;
+
+    justify-content:flex-end;   /* En lugar de center */
+    align-items:center;
+
+    padding:80px 30px 40px;
+
+    color:#0b2a4a;
+}
+
+/* Título "Faltan" */
+.block.countdown h2{
+    margin-top: 35px;
+    margin-bottom: 25px;
+
+    font-family: 'Dancing Script', cursive;
+    font-size: 2rem;
+    color: #6FA8FF;
+    text-shadow: 0 2px 8px rgba(255,255,255,.9);
+}
+
+/* Contenedor del contador */
+#countdown{
+    display:flex;
+    justify-content:center;
+    align-items:flex-start;
+    gap:0;
+    flex-wrap:nowrap;
+
+    width:100%;
+    max-width:340px;
+
+    margin:0 auto;
+}
+
+/* Cada elemento */
+#countdown div{
+    flex:1;
+    text-align:center;
+    background:none;
+    box-shadow:none;
+    backdrop-filter:none;
+    padding:0;
+    min-width:0;
+}
+
+/* Separadores */
+#countdown div:not(:last-child){
+    border-right:1px solid rgba(22,61,130,.25);
+}
+
+/* Números */
+#countdown span{
+    display:block;
+    font-size:2.2rem;
+    font-weight:700;
+    line-height:1;
+    color:#163D82;
+}
+
+/* Texto */
+#countdown p{
+    margin-top:6px;
+    font-size:.82rem;
+    color:#163D82;
+}
+/* Bloque 6: Confirmacion */
 .block.confirmacion{
     position: relative;
     display: block;
@@ -388,7 +382,7 @@ body {
     transform:scale(1.05);
 
 }
-/* Bloque 6: Papás */
+/* Bloque 7: Papás */
 .padres {
   font-style: italic;
   font-size: 1.3rem;
