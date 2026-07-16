@@ -147,21 +147,21 @@ body {
 /* Bloque 3: Portada adaptada */
 .block.portada {
     width: 100%;
-    height: auto;
+    aspect-ratio: 9 / 16; 
     background: url("img/Nota.png") center top / contain no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 30px 15px;   /* menos espacio en móvil */
+    padding: 0;  /* menos espacio en móvil */
 }
 
 /* Responsive para móviles */
 @media (max-width: 768px) {
   .block.portada {
-    min-height: auto;       /* deja que se adapte al contenido */
-    background-size: contain; /* muestra la imagen completa */
+    min-height: 100dvh;      /* deja que se adapte al contenido */
+    background-size: cover; /* muestra la imagen completa */
     background-position: center top;
-    padding: 20px 10px;     /* reduce aún más el padding */
+    padding: 0;     /* reduce aún más el padding */
   }
 }
 
