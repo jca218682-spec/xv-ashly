@@ -147,7 +147,7 @@ body {
 /* Bloque 3: Portada adaptada */
 .block.portada {
     width: 100%;
-    aspect-ratio: 9 / 16; 
+    height:700px; 
     background: url("img/Nota.png") center top / contain no-repeat;
     display: flex;
     justify-content: center;
@@ -158,7 +158,7 @@ body {
 /* Responsive para móviles */
 @media (max-width: 768px) {
   .block.portada {
-    min-height: 100dvh;      /* deja que se adapte al contenido */
+    height:600px;     /* deja que se adapte al contenido */
     background-size: cover; /* muestra la imagen completa */
     background-position: center top;
     padding: 0;     /* reduce aún más el padding */
