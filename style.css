@@ -393,12 +393,23 @@ body {
     transform:scale(1.05);
 
 }
-/* Bloque 7: Papás */
-.padres {
-  font-style: italic;
-  font-size: 1.3rem;
-}
+/* Bloque 7 Final*/
+.block.texto{
+    width:100%;
+    min-height:100dvh;
 
+    background-image:url("img/Final.png");
+    background-size:cover;
+    background-position:43% center;
+    background-repeat:no-repeat;
+
+    padding:0 !important;
+    margin:0 !important;
+
+    max-width:none;
+
+    display:block;
+}
 /* ===========================
    TIPOGRAFÍA ORIGINAL
 =========================== */
